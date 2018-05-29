@@ -1,0 +1,7 @@
+<h2>Messages</h2>
+<div *ngIf="MessageListState$| async as messageListState">
+  <button class="clear"
+          (click)="MessageClear()">clear
+  </button>
+  <div *ngFor='let message of messageListState.messages'> {{message}}</div>
+</div>

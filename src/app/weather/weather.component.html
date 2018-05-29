@@ -1,0 +1,36 @@
+<div id="container">
+  <label class="title" id="active">Weather in {{weather.name}}, {{weather.country}}</label>
+  <div id="div-icon">
+    <img src='{{weather.icon}}'>
+    <label id="temp">{{weather.temp}} °C</label>
+  </div>
+  <div id="weatherT">
+    <table>
+      <tr>
+        <td>
+          <label class="title">Cloudiness</label>
+        </td>
+        <td>
+          <label>{{weather.description}}</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label class="title">Humidity</label>
+        </td>
+        <td>
+          <label>{{weather.humidity}}</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label class="title">Wind</label>
+        </td>
+        <td>
+          <label>{{weather.speed}} m/s</label>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <button (click)="goBack()">go back</button>
+</div>

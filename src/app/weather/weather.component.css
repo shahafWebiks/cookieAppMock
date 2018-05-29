@@ -1,0 +1,46 @@
+.title {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  height: 80px;
+}
+
+tr, td {
+  border: 1px solid black;
+}
+
+td {
+  width: 100px;
+}
+
+#div-icon, #active {
+  margin-left: 230px;
+}
+
+#weatherT {
+  position: relative;
+  margin-left: 280px;
+}
+
+#temp {
+  top: -22px;
+  position: relative;
+}
+
+#container {
+  margin-top: 28px;
+}
+
+button {
+  margin-left: 260px;
+  margin-top: 25px;
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}

@@ -1,0 +1,11 @@
+<ac-map *ngIf="showMe">
+  <!--ngif here to load the map after the other js-->
+  <!--for some reason it destroys the map-->
+  <ac-layer acFor="let place of placesTemp" [context]="this">
+    <ac-point-desc props="{
+    position : place.position,
+    point : place.point
+    }">
+    </ac-point-desc>
+  </ac-layer>
+</ac-map>
